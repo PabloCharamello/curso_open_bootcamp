@@ -8,7 +8,7 @@ function TasklistComponent(props) {
     console.log("TODO: Cambiar estado de una tarea");
   };
 
-  const DEFAULTTASK = new Task(
+  const defaulTask = new Task(
     "Example",
     "Default Description",
     false,
@@ -20,7 +20,7 @@ function TasklistComponent(props) {
       <div>
         <h1>Your tasks:</h1>
       </div>
-      <TaskComponent task={DEFAULTTASK} />
+      <TaskComponent task={defaulTask} />
     </div>
   );
 }
